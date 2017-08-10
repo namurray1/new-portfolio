@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
@@ -17,10 +18,12 @@
 
 </head>
 
+<!--Make sure that you make all elements mobile responsive using the W3 schools CSS library. You have to add pictures, social media links, Change the font (so that it is easier to read), and either deploy through Firebase or Heroku. Add a contact card at the bottom of the page. Add links to projects within GitHub. You can also add links to pages like freeCodeAcademy and such. Maybe add border left padding in the About me section.-->
+
 <body>
     <!--navbar and contents-->
 
-    <div class="w3-top">
+    <div class="w3-top w3-mobile">
         <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
             <a href="#home" class="w3-card-item w3-button">
                     <b>Alex</b>
@@ -28,60 +31,84 @@
                     </a>
             <!--Float links to the right of the navbar-->
             <div class="w3-right w3-hide-small">
-                <a href="#about" class="w3-bar-item w3-button">About Me</a>
+                <a href="#about me" class="w3-bar-item w3-button">About Me</a>
                 <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+                <a href="#contact me" class="w3-bar-item w3-button">Contact Me</a>
             </div>
         </div>
     </div>
     <!-- Header -->
     <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
         <img src="images/tracks.jpg" alt="Train Tracks" width="1500" height"800">
-        <div class="w3-display-middle w3-margin-top w3-center">
+        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-white w3-center">
             <h1 class="w3-xxlarge w3-text-white">
                 <span class="w3-padding w3-black w3-opacity-min">
                     <b>Alex</b>
                 </span>
                 <span class="w3-hide-small w3-text-light grey">Murray</span>
             </h1>
+            <p>Web Developer</p>
         </div>
-        
+        <!--look up how to make page, header, and nav image responsive-->
     </header>
 
-    <!-- Page Content begins here -->
+    <!-- Page Content -->
 
-    <div class="w3-content w3-padding" style="max-width:">
+    <div class="w3-content w3-padding w3-mobile" style="max-width: 1564px">
+
+        <!-- About Me section -->
+
+        <div class="w3-container w3-padding-32" id="about me">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
+            
+        </div>
         
-    </div>
+    
 
 
+    <!-- Add photo grid here -->
 
     <div class="w3-row " id="myPhotoGrid " style=" ">
-        <div class="w3-twothird ">
+        <div class="w3-twothird w3-container">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
         </div>
 
-        <div class="w3-twothird ">
+        <div class="w3-twothird w3-container">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
         </div>
 
-        <div class="w3-twothird ">
+        <div class="w3-twothird w3-container">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
             <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
         </div>
-
+        <div class="w3-third w3-container">
+            <h2>About Me</h2>
+            <p>Culpa laboris velit exercitation do ullamco eu quis ipsum non sint labore. Consequat velit ut fugiat tempor duis laborum ut. Irure occaecat consequat ad tempor sunt. Elit commodo incididunt cupidatat excepteur id ex excepteur consectetur.</p>
+            <p>Enim sit nostrud tempor irure exercitation aute est consequat proident dolor consequat adipisicing. Aute cupidatat magna mollit est adipisicing non excepteur magna dolore anim laborum. Dolor deserunt anim dolor officia quis dolor. Id tempor dolor reprehenderit consequat reprehenderit enim qui id voluptate duis reprehenderit enim cillum. Sit aliquip tempor veniam reprehenderit consectetur mollit minim. Eiusmod pariatur mollit consectetur laborum nisi pariatur nisi aliqua tempor nostrud labore nostrud.</p>
+            <p>Non mollit irure non ea dolore ex fugiat est veniam ea fugiat exercitation elit. Ea non nostrud id esse voluptate consequat sint. Et aliqua deserunt Lorem qui nulla veniam et elit eiusmod cillum commodo esse minim voluptate.</p>
+            
+        </div>
     </div>
 
-    <div></div>
-    <div></div>
+      <div class="w3-container w3-padding-32" id="projects">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+            
+        </div>
+
+      <div class="w3-container w3-padding-32" id="contact me">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Me</h3>
+            
+        </div>
+</div>
+    <!-- Add Google Maps API here -->
 
 
 
