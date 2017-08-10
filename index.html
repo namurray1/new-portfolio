@@ -7,47 +7,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alex Murray</title>
     <link href="style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <!--insert TypeJS into hero-image with welcome message from around the world-->
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1 style="font-size: 50px">I am Alex Murray</h1>
-            <p>Web Developer, traveler, amateur photographer, <i>and</i> elephant ear enthusiast</p>
-            <button type="button" class="btn btn-default">Contact Me</button>
+    <!--navbar and contents-->
+
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+            <a href="#home" class="w3-card-item w3-button">
+                    <b>Alex</b>
+                    Murray 
+                    </a>
+            <!--Float links to the right of the navbar-->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">About Me</a>
+                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
         </div>
     </div>
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img src="images/tracks.jpg" alt="Train Tracks" width="1500" height"800">
+        <div class="w3-display-middle w3-margin-top w3-center">
+            <h1 class="w3-xxlarge w3-text-white">
+                <span class="w3-padding w3-black w3-opacity-min">
+                    <b>Alex</b>
+                </span>
+                <span class="w3-hide-small w3-text-light grey">Murray</span>
+            </h1>
+        </div>
+        
+    </header>
 
-    <!--Sidenav for document-->
+    <!-- Page Content begins here -->
 
-    <div id  = "mySidenav" class = "sidenav">
-        <a href="javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
-        <a href="#">About Me</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+    <div class="w3-content w3-padding" style="max-width:">
+        
     </div>
 
-    <!--Use any element to open the sidenav-->
-    
 
-    <!--Page content here-->
-    <div class = "container" onclick = "myFunction(this)">
-    <div id = "main">
-       <span style = "font-size: 30px;cursor:pointer" onclick="openNav()">&#9776; Open</span> 
-       <div class="bar1"></div>
-       <div class="bar2"></div>
-       <div class="bar3"></div>
-    </div>
+
+    <div class="w3-row " id="myPhotoGrid " style=" ">
+        <div class="w3-twothird ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+        </div>
+
+        <div class="w3-twothird ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+        </div>
+
+        <div class="w3-twothird ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+            <img src="http://loremflickr.com/g/50/50/grayscale " alt=" " style="width:100%; max-width:50px ">
+        </div>
+
     </div>
 
+    <div></div>
+    <div></div>
 
 
 
@@ -55,10 +89,11 @@
 
     <!--Add the following to the document, Alex. Profile card, Parallax, project section, thumbnail images to projects in GitHub, colored social media icons in profile card-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="index.js"></script>
+    <!--<script src="js/bootstrap.min.js "></script>-->
+    <script src="index.js "></script>
+
 </body>
 
 </html>
