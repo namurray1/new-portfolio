@@ -5,14 +5,30 @@ html {
 }
 
 * {
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Lato', sans-serif;;
 }
 
 
 
-/*-----navigation bar-----*/
 
-.w3-top {
-    text-decoration: none; /* remove underline on links in navbar and add hover*/
+
+
+
+/*-----Need to remove text-decoration from links-----*/
+
+
+/*a:link {
+    text-decoration: none;
 }
 
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}*/
