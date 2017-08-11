@@ -69,25 +69,25 @@
         <!-- Add photo grid here -->
 
         <div class="w3-row-padding w3-margin-top w3-margin-bottom">
-            <div class="w3-third">
+            <div class="w3-third w3-padding">
                 <div class="w3-card-2">
-                    <img src="images/artopening.jpg" class="w3-grayscale" style="width:100%" alt="Art Gallery">
+                    <img src="images/artopening.jpg" style="width:100%" onclick="onClick(this)" alt="Art Gallery">
                     <div class="container">
                         <h5>Baku Art Gallery</h5>
                     </div>
                 </div>
             </div>
-            <div class="w3-third">
+            <div class="w3-third w3-padding">
                 <div class="w3-card-2">
-                    <img src="images/brigade.png" class="w3-grayscale" style="width:100%" alt="Coding in a co-work space">
+                    <img src="images/brigade.png" style="width:100%" onclick="onClick(this)" alt="Coding in a co-work space">
                     <div class="container">
                         <h5>Code for Charlotte</h5>
                     </div>
                 </div>
             </div>
-            <div class="w3-third">
+            <div class="w3-third w3-padding">
                 <div class="w3-card-2">
-                    <img src="images/firstaidkit.jpg" class="w3-grayscale" style="width:100%" alt="Concert in London">
+                    <img src="images/firstaidkit.jpg" style="width:100%" onclick="onClick(this)" alt="Concert in London">
                     <div class="container">
                         <h5>First Aid Kit in London</h5>
                     </div>
@@ -97,25 +97,25 @@
             <!--Second Row-->
 
             <div class="w3-row-padding w3-margin-top w3-margin-bottom w3-section">
-                <div class="w3-third">
+                <div class="w3-third w3-padding">
                     <div class="w3-card-2">
-                        <img src="images/womenintech.jpg" class="w3-grayscale" style="width:100%" alt="">
+                        <img src="images/womenintech.jpg" style="width:100%" onclick="onClick(this)" alt="">
                         <div class="container">
                             <h5>Women in Tech Conference at Cardinal Solutions</h5>
                         </div>
                     </div>
                 </div>
-                <div class="w3-third">
+                <div class="w3-third w3-padding">
                     <div class="w3-card-2">
-                        <img src="images/miikesnow1.png" class="w3-grayscale" style="width:100%" alt="">
+                        <img src="images/miikesnow1.png" style="width:100%" onclick="onClick(this)" alt="">
                         <div class="container">
                             <h5>Miike Snow at the Fillmore</h5>
                         </div>
                     </div>
                 </div>
-                <div class="w3-third">
+                <div class="w3-third w3-padding">
                     <div class="w3-card-2">
-                        <img src="images/harrysbar.jpg" class ="w3-grayscale" style="width:100%" alt="Harry's Bar">
+                        <img src="images/harrysbar.jpg" style="width:100%" onclick="onClick(this)" alt="Harry's Bar">
                         <div class="container">
                             <h5>Harry's Manhattan Bar in Paris</h5>
                         </div>
@@ -125,25 +125,25 @@
                 <!--Third Row-->
 
                 <div class="w3-row-padding w3-margin-top">
-                    <div class="w3-third">
+                    <div class="w3-third w3-padding">
                         <div class="w3-card-2">
-                            <img src="images/towerbridge.jpg" clas="w3-grayscale" style="width:100%" alt="Bicycle">
+                            <img src="images/towerbridge.jpg" style="width:100%" onclick="onClick(this)" alt="Bicycle">
                             <div class="container">
                                 <h5>Tower Bridge, London</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="w3-third">
+                    <div class="w3-third w3-padding ">
                         <div class="w3-card-2">
-                            <img src="images/marthaontrain.jpg" class ="w3-grayscale" style="width:100%" alt="Picture of a friends">
+                            <img src="images/marthaontrain.jpg" style="width:100%" onclick="onClick(this)" alt="Picture of a friends">
                             <div class="container">
                                 <h5>Martha on a Train</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="w3-third">
+                    <div class="w3-third w3-padding ">
                         <div class="w3-card-2">
-                            <img src="images/eurostar.jpg" class  ="w3-grayscale" style="width:100%" alt="Woman on a train">
+                            <img src="images/eurostar.jpg" style="width:100%" onclick="onClick(this)" alt="Woman on a train">
                             <div class="container">
                                 <h5>EuroStar to Paris</h5>
                             </div>
@@ -180,19 +180,26 @@
 
             </div>
         </div>
+
+        <!--Modal for images in the About Me section-->
+
+        <div id="modal01" class="w3-modal w3-center" onclick="this.style.display='none'">
+            <img class="w3-modal-content" id="img01" style="width:60%">
+
+        </div>
     </div>
-        <!-- Add Google Maps API here -->
+    <!-- Add Google Maps API here -->
 
 
 
 
 
-        <!--Add the following to the document, Alex. Profile card, Parallax, project section, thumbnail images to projects in GitHub, colored social media icons in profile card-->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <!--<script src="js/bootstrap.min.js "></script>-->
-        <script src="index.js "></script>
+    <!--Add the following to the document, Alex. Profile card, Parallax, project section, thumbnail images to projects in GitHub, colored social media icons in profile card-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap.min.js "></script>-->
+    <script src="scripts/index.js "></script>
 
 </body>
 
