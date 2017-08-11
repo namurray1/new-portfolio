@@ -14,25 +14,25 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
-<!--Make sure that you make all elements mobile responsive using the W3 schools CSS library. You have to add pictures, social media links, Change the font (so that it is easier to read), and either deploy through Firebase or Heroku. Add a contact card at the bottom of the page. Add links to projects within GitHub. You can also add links to pages like freeCodeAcademy and such. Maybe add border left padding in the About me section.-->
+<!--Make sure that you make all elements mobile responsive using the W3 schools CSS library. You have to add pictures, social media links, Change the font (so that it is easier to read), and either deploy through Firebase or Heroku. Add a contact card at the bottom of the page. Add links to projects within GitHub. You can also add links to pages like freeCodeAcademy and such. Maybe add border left padding in the About me section. It would be nice to have a hover feature that encourage user to click photo to get modal popup-->
 
 <body>
     <!--navbar and contents-->
 
     <div class="w3-top w3-mobile">
-        <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card-2 w3-mobile">
             <a href="#home" class="w3-card-item w3-button">
                     <b>Alex</b>
                     Murray 
                     </a>
             <!--Float links to the right of the navbar-->
-            <div class="w3-right w3-hide-small style:text-decoration:none;">
+            <div class="w3-right w3-hide-small w3-mobile">
                 <a href="#about me" class="w3-bar-item w3-button">About Me</a>
                 <a href="#projects" class="w3-bar-item w3-button">Projects</a>
                 <a href="#contact me" class="w3-bar-item w3-button">Contact Me</a>
@@ -40,8 +40,8 @@
         </div>
     </div>
     <!-- Header -->
-    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-        <img src="images/charlotte2.png" alt="Train Tracks" width="1500" height "800">
+    <header class="w3-display-container w3-content w3-wide w3-mobile" style="max-width:1500px;" id="home">
+        <img src="images/charlotte2.png" class="w3-mobile" alt="Train Tracks" width="1500" height "800">
         <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-white w3-center">
             <h1 class="w3-xxlarge w3-text-white">
                 <span class="w3-padding w3-white w3-opacity-max">
@@ -66,10 +66,11 @@
 
 
 
+
         <!-- Add photo grid here -->
 
-        <div class="w3-row-padding w3-margin-top w3-margin-bottom">
-            <div class="w3-third w3-padding">
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-quarter w3-padding">
                 <div class="w3-card-2">
                     <img src="images/artopening.jpg" style="width:100%" onclick="onClick(this)" alt="Art Gallery">
                     <div class="container">
@@ -77,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w3-third w3-padding">
+            <div class="w3-quarter w3-padding">
                 <div class="w3-card-2">
                     <img src="images/brigade.png" style="width:100%" onclick="onClick(this)" alt="Coding in a co-work space">
                     <div class="container">
@@ -85,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w3-third w3-padding">
+            <div class="w3-quarter w3-padding">
                 <div class="w3-card-2">
                     <img src="images/firstaidkit.jpg" style="width:100%" onclick="onClick(this)" alt="Concert in London">
                     <div class="container">
@@ -93,100 +94,121 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!--Second Row-->
+        <!--Second Row-->
 
-            <div class="w3-row-padding w3-margin-top w3-margin-bottom w3-section">
-                <div class="w3-third w3-padding">
-                    <div class="w3-card-2">
-                        <img src="images/womenintech.jpg" style="width:100%" onclick="onClick(this)" alt="">
-                        <div class="container">
-                            <h5>Women in Tech Conference at Cardinal Solutions</h5>
-                        </div>
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-quarter w3-padding">
+                <div class="w3-card-2">
+                    <img src="images/womenintech.jpg" style="width:100%" onclick="onClick(this)" alt="">
+                    <div class="container">
+                        <h5>Women in Tech Conference at Cardinal Solutions</h5>
                     </div>
                 </div>
-                <div class="w3-third w3-padding">
-                    <div class="w3-card-2">
-                        <img src="images/miikesnow1.png" style="width:100%" onclick="onClick(this)" alt="">
-                        <div class="container">
-                            <h5>Miike Snow at the Fillmore</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-third w3-padding">
-                    <div class="w3-card-2">
-                        <img src="images/harrysbar.jpg" style="width:100%" onclick="onClick(this)" alt="Harry's Bar">
-                        <div class="container">
-                            <h5>Harry's Manhattan Bar in Paris</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Third Row-->
-
-                <div class="w3-row-padding w3-margin-top">
-                    <div class="w3-third w3-padding">
-                        <div class="w3-card-2">
-                            <img src="images/towerbridge.jpg" style="width:100%" onclick="onClick(this)" alt="Bicycle">
-                            <div class="container">
-                                <h5>Tower Bridge, London</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w3-third w3-padding ">
-                        <div class="w3-card-2">
-                            <img src="images/marthaontrain.jpg" style="width:100%" onclick="onClick(this)" alt="Picture of a friends">
-                            <div class="container">
-                                <h5>Martha on a Train</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w3-third w3-padding ">
-                        <div class="w3-card-2">
-                            <img src="images/eurostar.jpg" style="width:100%" onclick="onClick(this)" alt="Woman on a train">
-                            <div class="container">
-                                <h5>EuroStar to Paris</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <!--<div class="w3-third w3-container">
-
-        <p>Culpa laboris velit exercitation do ullamco eu quis ipsum non sint labore. Consequat velit ut fugiat tempor duis
-            laborum ut. Irure occaecat consequat ad tempor sunt. Elit commodo incididunt cupidatat excepteur id ex excepteur
-            consectetur.</p>
-        <p>Enim sit nostrud tempor irure exercitation aute est consequat proident dolor consequat adipisicing. Aute cupidatat
-            magna mollit est adipisicing non excepteur magna dolore anim laborum. Dolor deserunt anim dolor officia quis
-            dolor. Id tempor dolor reprehenderit consequat reprehenderit enim qui id voluptate duis reprehenderit enim cillum.
-            Sit aliquip tempor veniam reprehenderit consectetur mollit minim. Eiusmod pariatur mollit consectetur laborum
-            nisi pariatur nisi aliqua tempor nostrud labore nostrud.</p>
-        <p>Non mollit irure non ea dolore ex fugiat est veniam ea fugiat exercitation elit. Ea non nostrud id esse voluptate
-            consequat sint. Et aliqua deserunt Lorem qui nulla veniam et elit eiusmod cillum commodo esse minim voluptate.</p>
-
-    </div>-->
             </div>
-
-            <div class="w3-container w3-padding-32" id="projects">
-                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-
+            <div class="w3-quarter w3-padding">
+                <div class="w3-card-2">
+                    <img src="images/miikesnow1.png" style="width:100%" onclick="onClick(this)" alt="">
+                    <div class="container">
+                        <h5>Miike Snow at the Fillmore</h5>
+                    </div>
+                </div>
             </div>
-
-            <div class="w3-container w3-padding-32" id="contact me">
-                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Me</h3>
-
+            <div class="w3-quarter w3-padding">
+                <div class="w3-card-2">
+                    <img src="images/harrysbar.jpg" style="width:100%" onclick="onClick(this)" alt="Harry's Bar">
+                    <div class="container">
+                        <h5>Harry's Manhattan Bar in Paris</h5>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!--Modal for images in the About Me section-->
+        <!--Third Row-->
 
-        <div id="modal01" class="w3-modal w3-center" onclick="this.style.display='none'">
-            <img class="w3-modal-content" id="img01" style="width:60%">
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-quarter w3-padding">
+                <div class="w3-card-2">
+                    <img src="images/towerbridge.jpg" style="width:100%" onclick="onClick(this)" alt="Bicycle">
+                    <div class="container">
+                        <h5>Tower Bridge in London</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter w3-padding ">
+                <div class="w3-card-2">
+                    <img src="images/marthaontrain.jpg" style="width:100%" onclick="onClick(this)" alt="Picture of a friends">
+                    <div class="container">
+                        <h5>Martha on a Train</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter w3-padding ">
+                <div class="w3-card-2">
+                    <img src="images/eurostar.jpg" style="width:100%" onclick="onClick(this)" alt="Woman on a train">
+                    <div class="container">
+                        <h5>EuroStar to Paris</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Blockquote-->
+          
+        <div class="w3-panel w3-container w3-padding-24 w3-leftbar w3-gray w3-left">
+            <p class="w3-large w3-serif">
+                <i class="fa fa-quote-right" style="font-size:36px;color:black" >Cultivate the Karass</i></p>
+            <p>-Kurt Vonnegut</p>
+        </div>
+            
+
+
+        <!--About Me descriptive paragraph-->
+
+        <div class="w3-third w3-container w3-padding-24 w3-right">
+
+            <p><span>M</span>y name is Alex Murray. I was born in Manhattan, NY. I moved to Charlotte as a child where I also
+                attended secondary school and College. I graduated from the University of North Carolina at Charlotte with
+                a degree in Political Science where I also double majored in Philosophy (with a minor in Women's Studies).
+                What did I do next, you ask? Well, I did what any self-respecting liberal arts major would do. I went into
+                the hospitality business, where I bartended and managed night clubs and saloons, followed by a 12 year career
+                in the banking industry. Along the way, I maintained a childhood interest in technology which ultimately
+                lead me into Web Development.
+            </p>
+
+            <p>Now, I enjoy coding. I <i>really</i> enjoy coding. There are so many things that you can do. I mean... you can
+                change the world! Web Development is like an artist with a paint brush and canvas or a poet with a pen and
+                a piece of parchment. I immensely enjoy the process. And, web development is not easy. It requires a meticulous
+                eye, patience, the love of constant reading, and the pursuit of knowledge. Along the way, I have also found
+                a way to give back to the community by doing pro bono work with Code for Charlotte, a coding brigade. Civic
+                hacking is a great way to bring technology and, specifically the internet, to the people.</p>
+
+            <p>Now, I don' want you to think that I am all thumb drives, keyboards, and mice. There is life outside of coding!
+                I am an avid gardener, music lover, <i>very</i> amateur photographer, supporter of the arts, and animal advocate.
+                I also enjoy traveling the world...</p>
 
         </div>
+
+
+
+        <div class="w3-container w3-padding-32" id="projects">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+
+        </div>
+
+        <div class="w3-container w3-padding-32" id="contact me">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Me</h3>
+
+        </div>
+    </div>
+
+    <!--Modal for images in the About Me section-->
+
+    <div id="modal01" class="w3-modal w3-animate-zoom w3-center" onclick="this.style.display='none'">
+        <img class="w3-modal-content" id="img01" style="width:50%">
+
+    </div>
     </div>
     <!-- Add Google Maps API here -->
 
