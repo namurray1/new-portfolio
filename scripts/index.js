@@ -1,29 +1,37 @@
-$(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+$(function(){
   
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-     
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
+  $("a").on("click", function(event){
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $("#about me").animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
   });
+  
+  
+});
 
-function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
+ function onClick(element) {
+     document.getElementById("img01").src = element.src;
+     document.getElementById("modal01").style.display = "block";
 }
+
+ window.onscroll = function() {
+   scrollFunction();
+  };
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     document.getElementById("myBtn").style.display = "block";
+   } else {
+     document.getElementById("myBtn").style.display = "none";
+   }
+ }
+
+ function topFunction() {
+   document.body.scrollTop = 0;   document.documentElement.scrollTop = 0;
+ }

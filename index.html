@@ -1,301 +1,265 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alex Murray</title>
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!--links to Google Font and Font Awesome-->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Murray</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--links to Google Font and Font Awesome-->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
-<!--Add Dribble, Stack Overflow, and Medium to contact list at bottom-->
 
 <body>
-    <!--navbar and contents-->
-
-    
-        <div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card-2">
-            <a href="#home" class="w3-card-item w3-button">
+  <!--navbar and contents-->
+  
+  <div class="w3-top w3-mobile">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card-2 w3-mobile">
+      <a href="#home" class="w3-card-item w3-button">
                     <b>Alex</b>
                     Murray 
                     </a>
-            <!--Float links to the right of the navbar-->
-            <div class="w3-right w3-hide-small">
-                <a href="#about me" class="w3-bar-item w3-button w3-mobile">About Me</a>
-                <a href="#projects" class="w3-bar-item w3-button w3-mobile">Projects</a>
-                <a href="#contact me" class="w3-bar-item w3-button w3-mobile">Contact Me</a>
-            </div>
-        </div>
-    
-    <!-- Header -->
-    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-        <img src="images/charlotte2.png" class=" alt="Silhouette of the Charlotte skyline" style="width:100%;min-height:200px;max-height:800px;">
-        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-white w3-center">
-            <h1 class="w3-xxlarge w3-text-white">
-                <span class="w3-padding w3-white w3-opacity-max">
+      <!--Float links to the right of the navbar-->
+      <div class="w3-right w3-hide-small w3-mobile">
+        <a href="#about me" class="w3-bar-item w3-button">About Me</a>
+        <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+        <a href="#contact me" class="w3-bar-item w3-button">Contact Me</a>
+      </div>
+    </div>
+  </div>
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide w3-mobile" style="max-width:1500px;" id="home">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/charlotte2.png" class="w3-mobile" alt="Silhouette of the Charlotte skyline" style="width:100%;min-height:200px;max-height:800px;">
+    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-white w3-center">
+      <h1 class="w3-xxlarge w3-text-white">
+        <span class="w3-padding w3-white w3-opacity-max">
                     <b>Alex</b>
                 </span>
-                <span class="w3-hide-small w3-text-lightgrey">Murray</span>
-            </h1>
-            <p class="w3-large">Web Developer</p>
-        </div>
-        <!--look up how to make page, header, and nav image responsive-->
-    </header>
+        <span class="w3-hide-small w3-text-lightgrey">Murray</span>
+      </h1>
+      <p class="w3-large">Web Developer</p>
+    </div>
+    <!--look up how to make page, header, and nav image responsive-->
+  </header>
 
-    <!-- Page Content -->
+  <!-- Page Content -->
+  
+  <div class="w3-content w3-padding w3-mobile" style="max-width: 1564px">
 
-    <div class="w3-content w3-padding" style="max-width: 1564px">
+    <!-- About Me section -->
 
-        <!-- About Me section -->
-
-        <div class="w3-container" id="about me">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
-        </div>
-
-
-
-
-        <!-- Add photo grid here -->
-
-        <div class="w3-row-padding w3-margin-top">
-            <div class="w3-third w3-padding">
-                <div class="w3-card-2">
-                    <img src="images/artopening.jpg" style="width:100%" onclick="onClick(this)" alt="Art Gallery">
-                    <div class="container">
-                        <h5 class="w3-center">Baku Art Gallery</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third w3-padding">
-                <div class="w3-card-2">
-                    <img src="images/brigade.png" style="width:100%" onclick="onClick(this)" alt="Coding in a co-work space">
-                    <div class="container">
-                        <h5 class="w3-center">Code for Charlotte</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third w3-padding">
-                <div class="w3-card-2">
-                    <img src="images/firstaidkit.jpg" style="width:100%" onclick="onClick(this)" alt="Concert in London">
-                    <div class="container">
-                        <h5 class="w3-center">First Aid Kit in London</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Second Row-->
-
-        <div class="w3-row-padding w3-margin-top">
-            <div class="w3-third w3-padding">
-                <div class="w3-card-2">
-                    <img src="images/womenintech.jpg" style="width:100%" onclick="onClick(this)" alt="">
-                    <div class="container">
-                        <h5 class="w3-center">Women in Tech Conference at Cardinal Solutions</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third w3-padding">
-                <div class="w3-card-2">
-                    <img src="images/miikesnow1.png" style="width:100%" onclick="onClick(this)" alt="">
-                    <div class="container">
-                        <h5 class="w3-center">Miike Snow at the Fillmore</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third w3-padding">
-                <div class="w3-card-2">
-                    <img src="images/harrysbar.jpg" style="width:100%" onclick="onClick(this)" alt="Harry's Bar">
-                    <div class="container">
-                        <h5 class="w3-center">Harry's Manhattan Bar in Paris</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Third Row-->
-
-        <div class="w3-row-padding w3-margin-top">   
-            <div class="w3-third w3-padding">
-                <div class="w3-card-2">
-                    <img src="images/towerbridge.jpg" style="width:100%" onclick="onClick(this)" alt="Bicycle">
-                    <div class="container">
-                        <h5 class="w3-center">Tower Bridge in London</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third w3-padding ">
-                <div class="w3-card-2">
-                    <img src="images/marthaontrain.jpg" style="width:100%" onclick="onClick(this)" alt="Picture of a friends">
-                    <div class="container">
-                        <h5 class="w3-center">My girlfriend on a Train</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third w3-padding ">
-                <div class="w3-card-2">
-                    <img src="images/eurostar.jpg" style="width:100%" onclick="onClick(this)" alt="Woman on a train">
-                    <div class="container">
-                        <h5 class="w3-center">EuroStar to Paris</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <!--About Me descriptive paragraph-->
-        <div class="w3-row-padding w3-margin-top">
-
-
-            <div class="w3-container w3-threequarter w3-padding w3-left">
-
-                <p><span>M</span>y name is Alex Murray. I was born in Manhattan, NY. I moved to North Carolina as a child where
-                    I also attended secondary school and College. I graduated from the University of North Carolina at Charlotte
-                    with a degree in Political Science where I also double majored in Philosophy (with a minor in Women's
-                    Studies). What did I do next, you ask? Well, I did what any self-respecting liberal arts major would
-                    do. I went into the hospitality business, where I bartended and managed night clubs and saloons, followed
-                    by a 12 year career in the banking industry. Along the way, I maintained a childhood interest in technology
-                    which ultimately lead me into Web Development.
-                </p>
-
-                <p>Now, I enjoy coding. I <i>really</i> enjoy coding. There are so many things that you can do. I mean... you
-                    can change the world with coding! Web development is like an artist with a paint brush and canvas <i>OR</i>                    a poet with a pen and a piece of parchment. I immensely enjoy the process as you see things develop and
-                    come to life. Web development is not easy. It requires a meticulous eye, patience, voracious reading,
-                    and the constant pursuit of knowledge. Along the way, I have also found a way to give back to the community
-                    by doing pro bono work with Code for Charlotte. Civic hacking is a great way to bring technology and
-                    government to the people.</p>
-
-                <p>I don't want you to think that I'm all thumb drives, keyboards, and mice. There is life outside of coding!
-                    I am an avid gardener, music lover, a <i>very</i> amateur photographer, a supporter of the arts, and
-                    animal advocate. I also enjoy traveling the with my girlfriend and our dog, Murphy. In the meantime,
-                    I will continue to cultivate the karass...</p>
-
-            </div>
-
-            <!--Blockquote-->
-
-            <div class="w3-container w3-quarter w3-mobile w3-padding-24">
-                <div class="w3-panel w3-leftbar w3-medium w3-margin-left">
-                    <p><i class="fa fa-quote-right" style="font-size:24px;color:#999999"> Cultivate the Karass</i></p>
-                    <p>-Kurt Vonnegut (<i>"Cat's Cradle")</i></p>
-                </div>
-            </div>
-
-        </div>
-
-
-
-        <div class="w3-container w3-padding-32" id="projects">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-
-        </div>
-        <div class="w3-container w3-quarter">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ys9Or1dZ-pc" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-container w3-quarter">
-            <iframe width="100%" height="315" src="http://via.placeholder.com/315" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-container w3-quarter">
-            <iframe width="100%" height="315" src="http://via.placeholder.com/315" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="w3-container w3-quarter">
-            <iframe width="100%" height="315" src="http://via.placeholder.com/315" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div>
-            
-        </div>
-
-        <div class="w3-container w3-padding-32" id="contact me">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Me</h3>
-
-        </div>
-
-        <!--Contact me section with picture, skills bars, and social media contact icons-->
-
-        <div class="w3-row-padding">
-            <div class="w3-third w3-padding">
-                <div class="w3-card-4">
-                    <img src="images/UNCCpic1.png" style="width:100%" alt="Alex Murray">
-                    <div class="w3-container w3-center">
-                        <p>Alex Murray</p>
-                        <p>Web Developer</p>
-                        <a href="https://www.youtube.com/channel/UCCpm-Dh8OoVDQyEVrKXjEMA" target="_blank"><i class="fa fa-youtube w3-margin" style="font-size:32px;color:red"></i></a>
-                        <a href="https://www.linkedin.com/in/alex-murray-5056a155/" target="_blank"><i class="fa fa-linkedin-square w3-margin" style="font-size:32px; color:#66a3ff"></i></a>
-                        <a href="https://github.com/namurray1" target="_blank"><i class="fa fa-github w3-margin" style="font-size:32px;color:black"></i></a>
-                        <a href="https://www.twitter.com/MURRAY_ALEX" target="_blank"><i class="fa fa-twitter w3-margin" style="font-size:32px;color:#80b3ff"></i></a>
-                        <a href="mailto:namurray1@gmail.com" target="_blank"><i class="fa fa-envelope fa-inverse w3-margin" style="font-size:32px;color:red"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="w3-container w3-twothird w3-padding ">
-                <p class="w3-large w3-center">Tool Box</p>
-                <p>HTML</p>
-                <div class="w3-light-grey w3-round-xlarge w3-small">
-                    <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:90%">90%</div>
-                </div>
-                <p>CSS</p>
-                <div class="w3-light-grey w3-round-xlarge w3-small">
-                    <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:75%">75%</div>
-                </div>
-                <p>Javascript</p>
-                <div class="w3-light-grey w3-round-xlarge w3-small">
-                    <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:70%">70%</div>
-                </div>
-                <p>Node.JS</p>
-                <div class="w3-light-grey w3-round-xlarge w3-small">
-                    <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:70%">70%</div>
-                </div>
-                <p>React.JS</p>
-                <div class="w3-light-grey w3-round-xlarge w3-small">
-                    <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:50%">50%</div>
-                </div>
-                <p>MySQL</p>
-                <div class="w3-light-grey w3-round-xlarge w3-small">
-                    <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:60%">60%</div>
-                </div>
-            </div>
-
-        </div>
+    <div class="w3-container" id="about me">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
     </div>
 
-    <!--Modal for images in the About Me section-->
+    <!-- Add photo grid here -->
 
-    <div id="modal01" class="w3-modal w3-animate-zoom w3-center" onclick="this.style.display='none'">
-        <img class="w3-modal-content" id="img01" style="width:50%">
+    <div class="tooltip w3-row-padding w3-margin-top">
+      <div class="w3-third w3-padding">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/artopening.jpg" style="width:100%" onclick="onClick(this)" alt="Art Gallery">
+          <div class="container">
+            <h5 class="w3-center">Baku Art Gallery</h5>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-padding">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/brigade.png" style="width:100%" onclick="onClick(this)" alt="Coding in a co-work space">
+          <div class="container">
+            <h5 class="w3-center">Code for Charlotte</h5>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-padding">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/firstaidkit.jpg" style="width:100%" onclick="onClick(this)" alt="Concert in London">
+          <div class="container">
+            <h5 class="w3-center">First Aid Kit in London</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Second Row-->
+
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-third w3-padding">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/womenintech.jpg" style="width:100%" onclick="onClick(this)" alt="">
+          <div class="container">
+            <h5 class="w3-center">Women in Tech Conference at Cardinal Solutions</h5>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-padding">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/miikesnow1.png" style="width:100%" onclick="onClick(this)" alt="">
+          <div class="container">
+            <h5 class="w3-center">Miike Snow at the Fillmore</h5>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-padding">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/harrysbar.jpg" style="width:100%" onclick="onClick(this)" alt="Harry's Bar">
+          <div class="container">
+            <h5 class="w3-center">Harry's Manhattan Bar in Paris</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Third Row-->
+
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-third w3-padding">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/towerbridge.jpg" style="width:100%" onclick="onClick(this)" alt="Bicycle">
+          <div class="container">
+            <h5 class="w3-center">Tower Bridge in London</h5>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-padding ">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/marthaontrain.jpg" style="width:100%" onclick="onClick(this)" alt="Picture of a friends">
+          <div class="container">
+            <h5 class="w3-center">My girlfriend on a Train</h5>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-padding ">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/eurostar.jpg" style="width:100%" onclick="onClick(this)" alt="Train statiion board">
+          <div class="container">
+            <h5 class="w3-center">EuroStar to Paris</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--About Me descriptive paragraph-->
+    <div class="w3-row-padding w3-margin-top">
+
+      <div class="w3-container w3-threequarter w3-padding w3-left">
+
+      <p>Hello! My name is Alex Murray. I am a former banker turned web developer.  </p>
+
+      </div>
+
+      <!--Blockquote-->
+
+      <div class="w3-container w3-quarter w3-mobile w3-padding-24">
+        <div class="w3-panel w3-leftbar w3-medium w3-margin-left">
+          <p><i class="fa fa-quote-right" style="font-size:24px;color:#999999"> Cultivate the Karass</i></p>
+          <p>-Kurt Vonnegut (<i>"Cat's Cradle")</i></p>
+        </div>
+      </div>
 
     </div>
 
+    <div class="w3-container w3-padding-32" id="projects">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
 
-
-
-
-
-    <!--The Footer goes here.-->
-    <div class="w3-container w3-grey w3-center w3-padding">
-        <p>Developed by Alex Murray <i class="fa fa-copyright" style="font-size:18px">2017</i></p>
+    </div>
+    <div class="w3-container w3-quarter">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ys9Or1dZ-pc" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="w3-container w3-quarter">
+      <iframe width="100%" height="315" src="http://via.placeholder.com/315" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="w3-container w3-quarter">
+      <iframe width="100%" height="315" src="http://via.placeholder.com/315" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="w3-container w3-quarter">
+      <iframe width="100%" height="315" src="http://via.placeholder.com/315" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div>
 
     </div>
 
+    <div class="w3-container w3-padding-32" id="contact me">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Me</h3>
+
+    </div>
+
+    <!--Contact me section with picture, skills bars, and social media contact icons-->
+
+    <div class="w3-row-padding">
+      <div class="w3-third w3-padding">
+        <div class="w3-card-4">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/profilepic.jpg" class = "w3-circle" style="width:100%" alt="Alex Murray"> 
+          <div class="w3-container w3-center">
+            <p>Alex Murray - Web Developer</p>
+<!--             <p>Web Developer</p> -->
+            <a href="https://www.youtube.com/channel/UCCpm-Dh8OoVDQyEVrKXjEMA" target="_blank"><i class="fa fa-youtube w3-margin" style="font-size:32px;color:red"></i></a>
+            <a href="https://www.linkedin.com/in/alex-murray-5056a155/" target="_blank"><i class="fa fa-linkedin-square w3-margin" style="font-size:32px; color:#66a3ff"></i></a>
+            <a href="https://github.com/namurray1" target="_blank"><i class="fa fa-github w3-margin" style="font-size:32px;color:black"></i></a>
+            <a href="https://www.twitter.com/MURRAY_ALEX" target="_blank"><i class="fa fa-twitter w3-margin" style="font-size:32px;color:#80b3ff"></i></a>
+            <a href="mailto:namurray1@gmail.com" target="_blank"><i class="fa fa-envelope fa-inverse w3-margin" style="font-size:32px;color:red"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="w3-container w3-twothird w3-padding ">
+        <p class="w3-large w3-center">Tool Box</p>
+        <p>HTML</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:90%">90%</div>
+        </div>
+        <p>CSS</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:75%">75%</div>
+        </div>
+        <p>Javascript</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:70%">70%</div>
+        </div>
+        <p>Node.JS</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:70%">70%</div>
+        </div>
+        <p>React.JS</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:50%">50%</div>
+        </div>
+        <p>MySQL</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:60%">60%</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<!--   Go to Top -->
+<button onclick = "topFunction()" id = "myBtn" title = "Go to Top">Top</button> 
+  <!--Modal for images in the About Me section-->
+
+  <div id="modal01" class="w3-modal w3-animate-zoom w3-center" onclick="this.style.display='none'">
+    <img class="w3-modal-content" id="img01" style="width:50%">
+
+  </div>
+  
 
 
+  <!--The Footer goes here.-->
+  <div class="w3-container w3-grey w3-center w3-padding">
+    <p>alexmurray.design <i class="fa fa-copyright" style="font-size:18px">2017</i></p>
 
+  </div>
 
-    <!--Add the following to the document, Alex. Profile card, Parallax, project section, thumbnail images to projects in GitHub, colored social media icons in profile card-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!--<script src="js/bootstrap.min.js "></script>-->
-    <script src="scripts/index.js "></script>
+  <!--Add the following to the document, Alex. Profile card, Parallax, project section, thumbnail images to projects in GitHub, colored social media icons in profile card-->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!--<script src="js/bootstrap.min.js "></script>-->
+  <script src="scripts/index.js "></script>
 
 </body>
 
