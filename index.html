@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!--links to Google Font and Font Awesome-->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -17,14 +17,15 @@
 </head>
 
 <body>
-  <!--navbar and contents-->
 
+  <!--navbar and contents-->
   <div class="w3-top w3-mobile">
     <div class="w3-bar w3-white w3-wide w3-padding w3-card-2 w3-mobile">
       <a href="#home" class="w3-card-item w3-button">
         <b>Alex</b>
         Murray
       </a>
+
       <!--Float links to the right of the navbar-->
       <div class="w3-right w3-hide-small w3-mobile">
         <a href="#about me" class="w3-bar-item w3-button">About Me</a>
@@ -32,9 +33,28 @@
         <a href="#contact me" class="w3-bar-item w3-button">Contact Me</a>
       </div>
     </div>
+
+
+    <!-- navbar for small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">SEARCH</a>
+    </div>
   </div>
+
+  <!-- First Parallax Image with logo text below. LOOK HERE!!! YOU TOOK OPACITY OFF OF THE IMAGE IN THE FIRST DIV -->
+
+  <div class="bgimg-1 w3-display-container" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ALEX
+        <span class="w3-hide-small">MURRAY</span> DESIGNS</span>
+    </div>
+  </div>
+
   <!-- Header -->
-  <header class="w3-display-container w3-content w3-wide w3-mobile" style="max-width:1500px;" id="home">
+  <!-- <header class="w3-display-container w3-content w3-wide w3-mobile" style="max-width:1500px;" id="home">
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/charlotte2.png" class="w3-mobile" alt="Silhouette of the Charlotte skyline"
       style="width:100%;min-height:200px;max-height:800px;">
     <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-white w3-center">
@@ -46,59 +66,54 @@
       </h1>
       <p class="w3-large">Web Developer</p>
     </div>
-    <!--look up how to make page, header, and nav image responsive-->
-  </header>
+  </header> -->
 
-  <!-- Page Content -->
+  <!-- About Me section. Make sure to add a skill section here -->
 
-  <div class="w3-content w3-padding" style="max-width: 1564px">
+  <div class="w3-content w3-padding-48" style="max-width: 1564px">
 
-    <!-- About Me section -->
-
-    <div class="w3-container" id="about me">
+    <!-- <div class="w3-container" id="about me">
       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
-    </div>
+    </div> -->
 
-    <!--Image card goes here-->
+    <!--Image card -->
 
     <div class="w3-row">
 
-      <div class="w3-third w3-padding">
-        <div class="w3-card-4">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/profilepic.jpg" style="width:100%" alt="Alex Murray">
+
+      <div class="w3-col s4 w3-card-4 w3-center w3-padding">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/profilepic.jpg" style="width:100%" alt="Alex Murray">
+        <div class="w3-container w3-center">
           <div class="w3-container w3-center">
-            <div class="container w3-center">
-              <h4>Alex Murray</h4>
-              <p class="w3-opacity">Web Developer</p>
-            </div>
-            <!-- you need to fix the icons here -->
-
-            <a href="https://www.youtube.com/channel/UCCpm-Dh8OoVDQyEVrKXjEMA" class="btn-floating red" target="_blank">
-              <i class="fa fa-youtube w3-margin" style="font-size:32px;color:red"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/alex-murray-5056a155/" class="btn-floating yellow" target="_blank">
-              <i class="fa fa-linkedin-square w3-margin" style="font-size:32px; color:#66a3ff"></i>
-            </a>
-            <a href="https://github.com/namurray1" class="btn-floating green" target="_blank">
-              <i class="fa fa-github w3-margin" style="font-size:32px;color:black"></i>
-            </a>
-            <a href="https://www.twitter.com/MURRAY_ALEX" class="btn-floating blue" target="_blank">
-              <i class="fa fa-twitter w3-margin" style="font-size:32px;color:#80b3ff"></i>
-            </a>
-            <a href="mailto:namurray1@gmail.com" class="btn-floating teal" target="_blank">
-              <i class="fa fa-envelope fa-inverse w3-margin" style="font-size:32px;color:red"></i>
-            </a>
-
+            <h4>Alex Murray</h4>
+            <p class="w3-opacity">Web Developer</p>
           </div>
+          <!-- you need to fix the icons here -->
+          <div class="w3-container">
+          <a href="https://www.youtube.com/channel/UCCpm-Dh8OoVDQyEVrKXjEMA" class="btn-floating red" target="_blank">
+            <i class="fa fa-youtube w3-margin" style="font-size:32px;color:red"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/alex-murray-5056a155/" class="btn-floating yellow" target="_blank">
+            <i class="fa fa-linkedin-square w3-margin" style="font-size:32px; color:#66a3ff"></i>
+          </a>
+          <a href="https://github.com/namurray1" class="btn-floating green" target="_blank">
+            <i class="fa fa-github w3-margin" style="font-size:32px;color:black"></i>
+          </a>
+          <a href="https://www.twitter.com/MURRAY_ALEX" class="btn-floating blue" target="_blank">
+            <i class="fa fa-twitter w3-margin" style="font-size:32px;color:#80b3ff"></i>
+          </a>
+          <a href="mailto:namurray1@gmail.com" class="btn-floating teal" target="_blank">
+            <i class="fa fa-envelope fa-inverse w3-margin" style="font-size:32px;color:red"></i>
+          </a>
+        </div>
         </div>
       </div>
-      <div class="w3-container w3-twothird">
+
+      <div class="w3-col s4 w3-padding">
 
         <!-- Talk about yourself, your interest, and your projects as it relates to coding -->
 
-        <p>Quis aliqua eiusmod deserunt velit nisi. Officia exercitation incididunt voluptate commodo cillum laboris. Et officia
-          ut fugiat deserunt quis minim ut qui ut. Magna eu ad enim deserunt in ipsum anim cupidatat adipisicing minim. Aute
-          labore Lorem est dolore exercitation dolore. Reprehenderit laboris occaecat qui minim proident ullamco incididunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eos possimus voluptas eligendi quisquam iure nihil! Dignissimos consequatur odio sunt voluptatem rem, est qui hic ea quos ullam! Animi, nesciunt. </p>
 
         <p>Id exercitation velit consectetur cupidatat. Nisi nulla ex anim sunt est nisi non. Nisi pariatur amet ea ad voluptate
           exercitation dolor in dolor laboris duis laboris duis incididunt. Sunt Lorem nostrud enim sunt non duis magna eiusmod
@@ -110,10 +125,8 @@
           fugiat obcaecati possimus pariatur veniam aspernatur eius eligendi commodi omnis amet. Error obcaecati voluptatem
           optio.
         </p>
+        <div class="w3-container w3-padding-24">
 
-        <!--Blockquote-->
-
-        <div class="w3-container w3-twothird">
           <div class="w3-panel w3-leftbar">
             <p>
               <i class="fa fa-quote-right" style="font-size:24px;color:#999999"> Cultivate the Karass</i>
@@ -124,81 +137,84 @@
           </div>
         </div>
       </div>
+      
+      <!--Skill Section -->
+      
+          <div class="w3-col s4 w3-padding">
+            <p class="w3-large w3-center">Tool Box</p>
+            <p>HTML</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:90%">90%</div>
+            </div>
+            <p>CSS</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:75%">75%</div>
+            </div>
+            <p>Javascript</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:70%">70%</div>
+            </div>
+            <p>Node.JS</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:70%">70%</div>
+            </div>
+            <p>React.JS</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:50%">50%</div>
+            </div>
+            <p>MySQL</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:60%">60%</div>
+            </div>
+          </div>
+       
 
     </div>
-
   </div>
+  <!-- YOU NEED TO PLACE THE SECOND PARALLAX HERE -->
+  <div class="bgimg-1" w3-display-container w3-opacity-min>
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">Projects and photos</span>
+    </div>
   </div>
 
   <!-- End of "About Me" section -->
 
   <!-- Beginning of Projects and photo section -->
-
   <div class="w3-container" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
   </div>
 
-  <!-- You need to fix the width of the youtube video -->
-  <div class="w3-container w3-row">
-  <div class="w3-container w3-quarter">
-    <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ys9Or1dZ-pc" frameborder="0" allowfullscreen></iframe> -->
-    <img src='https://placehold.it/351x315?text=Coming%20Soon' alt='Coming Soon' />
-  </div>
-  <div class="w3-container w3-quarter">
-    <img src='https://placehold.it/351x315?text=Coming%20Soon' alt='Coming Soon' />
-  </div>
-  <div class="w3-container w3-quarter">
-    <img src='https://placehold.it/351x315?text=Coming%20Soon' alt='Coming Soon' />
-  </div>
-  <div class="w3-container w3-quarter">
-    <img src='https://placehold.it/351x315?text=Coming%20Soon' alt='Coming Soon' />
-  </div>
-
-</div>
+  <div class="w3-content w3-padding" style="max-width: 1564px">
 
 
-  <div class="w3-container w3-padding-32" id="contact me">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Me</h3>
+    <!-- You need to fix the width of the youtube video -->
+    <div class="w3-container w3-row">
+      <div class="w3-container w3-quarter">
+        <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ys9Or1dZ-pc" frameborder="0" allowfullscreen></iframe> -->
+        <img src='https://placehold.it/351x315?text=Coming%20Soon' alt='Coming Soon' />
+      </div>
+      <div class="w3-container w3-quarter">
+        <img src='https://placehold.it/351x315?text=Coming%20Soon' alt='Coming Soon' />
+      </div>
+      <div class="w3-container w3-quarter">
+        <img src='https://placehold.it/351x315?text=Coming%20Soon' alt='Coming Soon' />
+      </div>
+      <div class="w3-container w3-quarter">
+        <img src='https://placehold.it/351x315?text=Coming%20Soon' alt='Coming Soon' />
+      </div>
 
+    </div>
   </div>
 
-  <!-- Tool Box -->
+  <div class="bgimg-1" w3-display-container w3-opacity-min>
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">Projects and photos</span>
+    </div>
+  </div>
 
 
-  <!-- <div class="w3-container w3-twothird w3-padding ">
-        <p class="w3-large w3-center">Tool Box</p>
-        <p>HTML</p>
-        <div class="w3-light-grey w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:90%">90%</div>
-        </div>
-        <p>CSS</p>
-        <div class="w3-light-grey w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:75%">75%</div>
-        </div>
-        <p>Javascript</p>
-        <div class="w3-light-grey w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:70%">70%</div>
-        </div>
-        <p>Node.JS</p>
-        <div class="w3-light-grey w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:70%">70%</div>
-        </div>
-        <p>React.JS</p>
-        <div class="w3-light-grey w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:50%">50%</div>
-        </div>
-        <p>MySQL</p>
-        <div class="w3-light-grey w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-light-green" style="width:60%">60%</div>
-        </div>
-      </div> -->
-
-  <!-- </div>
-  </div> -->
-
-  <!-- Add photo grid here -->
-
-  <!-- <div class="tooltip w3-row-padding w3-margin-top">
+  <div class="tooltip w3-row-padding w3-margin-top">
     <div class="w3-third w3-padding">
       <div class="w3-card-2">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/artopening.jpg" style="width:100%" onclick="onClick(this)"
@@ -225,11 +241,11 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <!--Second Row-->
 
-  <!-- <div class="w3-row-padding w3-margin-top">
+  <div class="w3-row-padding w3-margin-top">
     <div class="w3-third w3-padding">
       <div class="w3-card-2">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/womenintech.jpg" style="width:100%" onclick="onClick(this)"
@@ -257,39 +273,45 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <!--Third Row-->
+  <div class="w3-container">
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-third w3-padding">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/towerbridge.jpg" style="width:100%" onclick="onClick(this)"
+            alt="Bicycle">
+          <div class="container">
+            <h5 class="w3-center">Tower Bridge in London</h5>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-padding ">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/marthaontrain.jpg" style="width:100%" onclick="onClick(this)"
+            alt="Picture of a friends">
+          <div class="container">
+            <h5 class="w3-center">My girlfriend on a Train</h5>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-padding ">
+        <div class="w3-card-2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/eurostar.jpg" style="width:100%" onclick="onClick(this)" alt="Train statiion board">
+          <div class="container">
+            <h5 class="w3-center">EuroStar to Paris</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-container w3-padding-32" id="contact me">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Me</h3>
 
-  <!-- <div class="w3-row-padding w3-margin-top">
-    <div class="w3-third w3-padding">
-      <div class="w3-card-2">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/towerbridge.jpg" style="width:100%" onclick="onClick(this)"
-          alt="Bicycle">
-        <div class="container">
-          <h5 class="w3-center">Tower Bridge in London</h5>
-        </div>
-      </div>
-    </div>
-    <div class="w3-third w3-padding ">
-      <div class="w3-card-2">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/marthaontrain.jpg" style="width:100%" onclick="onClick(this)"
-          alt="Picture of a friends">
-        <div class="container">
-          <h5 class="w3-center">My girlfriend on a Train</h5>
-        </div>
-      </div>
-    </div>
-    <div class="w3-third w3-padding ">
-      <div class="w3-card-2">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/eurostar.jpg" style="width:100%" onclick="onClick(this)" alt="Train statiion board">
-        <div class="container">
-          <h5 class="w3-center">EuroStar to Paris</h5>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!--end of skill section-->
+  </div>
+
+
 
   <!-- Materialized CSS button here -->
 
@@ -329,7 +351,7 @@
   <!--<script src="js/bootstrap.min.js "></script>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="scripts/index.js "></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js" integrity="sha256-Cxf2osSjVdgIUDXd8CR70LjMnQD0TA908QL1v00EtMY=" crossorigin="anonymous"></script>
+
 
 
 </body>
