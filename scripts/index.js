@@ -27,8 +27,11 @@ $(document).ready(function(){
 
 
 
+
   
 });
+
+
 
 // Model for image grid
 
@@ -50,7 +53,7 @@ function scrollFunction() {
   }
 }
 
-// function topFunction() { 
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
+function topFunction() { 
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
