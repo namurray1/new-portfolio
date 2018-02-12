@@ -7,17 +7,18 @@ html {
  /* all elements on page use this font. Consider changing it to another Google Font */
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Parallax Effect */
 
-.bgimg-1, .bgimg-2,  .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3  {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 /* First Image - Full height */
 .bgimg-1 {
@@ -27,13 +28,13 @@ html {
 
 /* Second image(Projects) */
 .bgimg-2 {
-  background-image: url('images/uptown0.png');
-  min-height: 400%;
+  background-image: url('images/uptown1.png');
+  min-height: 100%;
 }
 
 /* Third Image(Contact) */
-.bgimg-2 {
-  background-image: url('images/pbclouds.jpg');
+.bgimg-3 {
+  background-image: url('#');
   min-height: 400%;
 }
 
