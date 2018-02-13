@@ -34,8 +34,8 @@ html {
 
 /* Third Image(Contact) */
 .bgimg-3 {
-  background-image: url('#');
-  min-height: 400%;
+  background-image: url('pbclouds.jpg');
+  min-height: 100%;
 }
 
 
