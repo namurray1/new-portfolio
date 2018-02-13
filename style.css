@@ -1,7 +1,7 @@
 body,
 html {
   height: 100%;
-  color: #777;
+  color:#777 ;
   line-height: 1.8;
 }
  /* all elements on page use this font. Consider changing it to another Google Font */
@@ -34,7 +34,7 @@ html {
 
 /* Third Image(Contact) */
 .bgimg-3 {
-  background-image: url('pbclouds.jpg');
+  background-image: url('images/pbclouds.jpg');
   min-height: 100%;
 }
 

@@ -34,9 +34,8 @@ $(document).ready(function(){
 });
 
 //Change style of navbar
-window.onscroll = function() {
-  myFunction();
-};
+
+window.onscroll = function() {myFunction();};
 function myFunction() {
   var navbar = document.getElementById("myNavbar");
   if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -50,6 +49,7 @@ function myFunction() {
 
 
 // function for opening menu on small screens
+
 function toggleFunction() {
   var x = document.getElementById("navDemo");
   if(x.className.indexOf("w3-show") === -1) {

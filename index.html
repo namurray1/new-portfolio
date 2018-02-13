@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!--links to Google Font and Font Awesome-->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -20,17 +19,14 @@
 
   <!--navbar and contents-->
   <div class="w3-top">
-    <div class "w3-bar" id="myNavbar">
-      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+    <div class "w3-bar w3-border w3-card-4" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large" href="javascript:void(0);" onclick="toggleFunction()"
         title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
-        <a="#home" class="w3-card-item w3-button">
-          <b>Alex</b>
-          Murray
-      </a>
-      <a href="#about me" class="w3-bar-item w3-button w3-hide-small">About Me</a>
-      <a href="#projects" class="w3-bar-item w3-button w3-hide-small">Projects</a>
-      <a href="#my photos" class="w3-bar-item w3-button w3-hide-small">My Photos</a>
+        <a href="#alex murray" class="w3-bar-item w3-button w3-hide-small">Alex Murray</a>
+        <a href="#about me" class="w3-bar-item w3-button w3-hide-small">About Me</a>
+        <a href="#projects" class="w3-bar-item w3-button w3-hide-small">Projects</a>
+        <a href="#contact me" class="w3-bar-item w3-button w3-hide-small">Contact Me</a>
 
     </div>
 
@@ -39,12 +35,12 @@
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
       <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
       <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
-      <a href="#my photos" class="w3-bar-item w3-button" onclick="toggleFunction()">MY PHOTOS</a>
+      <a href="#contact me" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT ME</a>
       <!-- <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">SEARCH</a> -->
     </div>
   </div>
 
-  <!-- First Parallax Image with logo text below. LOOK HERE!!! YOU TOOK OPACITY OFF OF THE IMAGE IN THE FIRST DIV -->
+  <!-- First Parallax Image with logo text below. -->
 
   <div class="bgimg-1 w3-display-container" id="home">
     <div class="w3-display-middle" style="white-space:nowrap;">
@@ -53,27 +49,13 @@
     </div>
   </div>
 
-  <!-- Header -->
-  <!-- <header class="w3-display-container w3-content w3-wide w3-mobile" style="max-width:1500px;" id="home">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1374530/charlotte2.png" class="w3-mobile" alt="Silhouette of the Charlotte skyline"
-      style="width:100%;min-height:200px;max-height:800px;">
-    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-white w3-center">
-      <h1 class="w3-xxlarge w3-text-white">
-        <span class="w3-padding w3-white w3-opacity-max">
-          <b>Alex</b>
-        </span>
-        <span class="w3-hide-small w3-text-lightgrey">Murray</span>
-      </h1>
-      <p class="w3-large">Web Developer</p>
-    </div>
-  </header> -->
-
+  <!-- About me Section -->
 
   <div class="w3-content w3-padding-48" style="max-width: 1564px">
 
 
     <div class="w3-row">
-      <div class="w3-content w3-container w3-padding-64" id="about">
+      <div class="w3-content w3-container w3-padding-64" id="about me">
         <h3 class="w3-center"> </h3>
         <p class="w3-center">
           <em>Web Developer</em>
@@ -138,7 +120,7 @@
 
 
 
-     
+
 
     </div>
   </div>
@@ -149,11 +131,11 @@
 
   <div class="bgimg-2 w3-display-container">
     <div class="w3-display-middle">
-      <span class="w3-xxlarge w3-text-white w3-wide" style="white-space:nowrap;">Projects and photos</span>
+      <span class="w3-xxlarge w3-text-white w3-wide" style="white-space:nowrap;">Projects and Photos</span>
     </div>
   </div>
 
-<!-- End of Uptown Charlotte image -->
+  <!-- End of Uptown Charlotte image -->
 
 
   <!-- Beginning of Projects and photo section -->
@@ -162,7 +144,7 @@
   <div class="w3-content w3-padding" style="max-width: 1564px">
 
     <div class="w3-row">
-      <div class="w3-content w3-container w3-padding-64" id="about">
+      <div class="w3-content w3-container w3-padding-64" id="projects">
         <h3 class="w3-center">PROJECTS</h3>
         <p class="w3-center">
           <em>Web Developer</em>
@@ -170,23 +152,76 @@
 
 
 
-       
+
       </div>
       <!-- </div> -->
     </div>
   </div>
 
   <!-- Third parallax image goes here -->
-  
+
   <div class="bgimg-3 w3-display-container">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide" style="white-space:nowrap;">Contact Me</span>
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide" style="white-space:nowrap;">Contact Me</span>
+    </div>
+  </div>
+
+  <!-- Google Map and contact information here -->
+
+  <div class="w3-content w3-container w3-padding-64" id="contact me">
+
+    <h3 class="w3-center">How to reach me</h3>
+    <p class="w3-center">
+      <em>Social Media | Email | Blog | Resume</em>
+    </p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m6 w3-container">
+        <div id="googleMap" class="w3-large-round w3-card-4 w3-grayscale-min" style="width:400px; height:400px; background:black">
+        </div>
+        <!-- Social media, email, blog links, and resume items go here -->
+      </div>
+      <div class="w3-col m6 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Charlotte, NC
+          <br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>phone:704-222-9205
+          <br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Email:namurray1@gmail.com
+          <br>
+          <form action="/action_page.php" target="blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                <button class="w3-button" w3-black w3-right w3-section type="submit">
+                  <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+          </form>
+          </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  </div>
 
- 
 
 
+
+  <!--The Footer goes here.-->
+
+  <div class="w3-container w3-grey w3-center w3-padding">
+    <p>alexmurray.design
+      <i class="fa fa-copyright" style="font-size:18px">2017</i>
+    </p>
+
+  </div>
 
   <!-- Fix the Go to the Top button -->
 
@@ -208,40 +243,6 @@
 
   </div> -->
 
-  
-
-
-  <!-- Put Google Map and contact information here -->
-
-  <div class="w3-content w3-container w3-padding-64" id="contact">
-
-    <h3 class="w3-center">Contact Me</h3>
-    <p class="w3-center">
-      <em>Social Media | Email | Blog |Resume</em>
-    </p>
-
-    <div class="w3-row w3-padding-32 w3-section">
-      <div class="w3-col m4 w3-container">
-        <div id="googleMap" class="w3-large " style="width:400px; height:400px; background:black">
-        </div>
-        <!-- Social media, email, blog links, and resume items go here -->
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-
-
-  <!--The Footer goes here.-->
-
-  <div class="w3-container w3-grey w3-center w3-padding">
-    <p>alexmurray.design
-      <i class="fa fa-copyright" style="font-size:18px">2017</i>
-    </p>
-
-  </div>
-
   <!--Add the following to the document, Alex. Profile card, Parallax, project section, thumbnail images to projects in GitHub, colored social media icons in profile card-->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
@@ -251,7 +252,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="scripts/index.js "></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1-rFGZ-tBTowFcAEAvY4Ax0fAjGEmSpc&callback=myMap"
-  type="text/javascript"></script>
+    type="text/javascript"></script>
 
 
 
