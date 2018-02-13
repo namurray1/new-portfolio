@@ -59,6 +59,22 @@ function toggleFunction() {
   }
 }
 
+function myMap() 
+{
+  myCenter = new google.maps.LatLng(35.247295, -80.796604);
+  var mapOptions = {
+    center: myCenter,
+    zoom:12, scrollWheel: true, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
 
 // Model for image grid
 
