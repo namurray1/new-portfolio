@@ -29,9 +29,12 @@
         <i class="fa fa-bars"></i>
       </a>
       <a href="#alex murray" class="w3-bar-item w3-button w3-hover-teal w3-hide-small">Alex Murray</a>
-      <a href="#about me" class="w3-bar-item w3-button w3-hover-teal w3-hide-small w3-right"><i class="fa fa-user"></i> About Me</a>
-      <a href="#projects" class="w3-bar-item w3-button w3-hover-teal w3-hide-small w3-right"><i class="fa fa-th"></i> Projects</a>
-      <a href="#contact me" class="w3-bar-item w3-button w3-hover-teal w3-hide-small w3-right"><i class="fa fa-envelope"></i> Contact Me</a>
+      <a href="#about me" class="w3-bar-item w3-button w3-hover-teal w3-hide-small w3-right">
+        <i class="fa fa-user"></i> About Me</a>
+      <a href="#projects" class="w3-bar-item w3-button w3-hover-teal w3-hide-small w3-right">
+        <i class="fa fa-th"></i> Projects</a>
+      <a href="#contact me" class="w3-bar-item w3-button w3-hover-teal w3-hide-small w3-right">
+        <i class="fa fa-envelope"></i> Contact Me</a>
 
     </div>
 
@@ -61,7 +64,7 @@
 
     <div class="w3-row">
       <div class="w3-content w3-container w3-padding-64" id="about me">
-        <h3 class="w3-center"> </h3>
+        <h3 class="w3-center">About Me</h3>
         <p class="w3-center">
           <em>Web Developer</em>
         </p>
@@ -108,6 +111,7 @@
   <!-- Beginning of second parallax-->
 
   <div class="bgimg-2 w3-display-container w3-mobile">
+    <!--this section is good to go-->
     <div class="w3-display-middle">
       <span class="w3-row w3-xxlarge w3-text-white w3-wide" style="white-space:nowrap;">Projects and Photos</span>
     </div>
@@ -118,27 +122,34 @@
 
   <!-- Beginning of Projects and photo section -->
 
+  <!-- <div class="w3-content w3-padding" style="max-width: 1564px"> -->
 
-  <div class="w3-content w3-padding" style="max-width: 1564px">
+  <!-- <div class="w3-row"> -->
+  <div class="w3-content w3-container w3-padding-32" id="projects">
+    <!--This top area is good. You need to fix the coming soon and project area-->
+    <h3 class="w3-center">PROJECTS</h3>
+    <p class="w3-center">
+      <em>Web Developer</em>
+    </p>
 
-    <div class="w3-row">
-      <div class="w3-content w3-container w3-padding-64" id="projects">
-        <h3 class="w3-center">PROJECTS</h3>
-        <p class="w3-center">
-          <em>Web Developer</em>
-        </p>
-
-
-<!-- You need to put your coming soon apps here  -->
-
-      </div>
-      <!-- </div> -->
+    <div class="w3-card-4">
+      <!--Fix this area-->
+      <img src='https://placehold.it/400x400?text=Coming%20Soon' alt='' />
+      <p>Project 1</p>
     </div>
+
+
+    <!-- You need to put your coming soon apps above and in this area  -->
+
   </div>
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
 
   <!-- Third parallax image goes here -->
 
   <div class="bgimg-3 w3-display-container">
+    <!--This section is good to go-->
     <div class="w3-display-middle">
       <span class="w3-row w3-xxlarge w3-text-white w3-wide" style="white-space:nowrap;">Contact Me</span>
     </div>
@@ -147,80 +158,90 @@
 
   <!-- Google Map and contact information here -->
 
-  <div class="w3-content w3-container w3-padding-64" id="contact me">
-
+  <!-- <div class="w3-content w3-container w3-padding-64" id="contact me"> -->
+  <div class="w3-row w3-padding-24">
+    <!--This section is good to go-->
     <h3 class="w3-center">How to reach me</h3>
     <p class="w3-center">
       <em>Social Media | Email | Blog | Resume</em>
     </p>
+  </div>
+  <!--End of top row-->
 
-    <di v class="w3-row w3-padding-32 w3-section">
-
-      <div class="w3-col m6 w3-container w3-padding">
-
-        <!--change back to m6?-->
-        <div class="w3-container">
-        <div id="googleMap" class="w3-large-round w3-card-4 w3-grayscale-min" style="width:400px; height:400px; background:black">
-        </div>
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m6 w3-container">
+      <div id="googleMap" class="w3-large-round w3-right w3-card-4 w3-grayscale-min" style="width:400px; height:400px;">
       </div>
     </div>
-
-      <!-- Social media, email, blog links, and resume items go here -->
-    <div class="w3-container w3-padding">
-      <div class="w3-col m6 w3-container w3-padding">
-        <div class="w3-large w3-margin-bottom">
-          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Charlotte, NC
-          <br>
-          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Phone: 704-222-9205
-          <br>
-          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Email: namurray1@gmail.com
-          <br>
-        </div>
-        <form action="/action_page.php" target="blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-
-          <button class="w3-button w3-hover-teal w3-disabled" w3-black w3-right w3-section type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </form>
-        <!-- Add you social media contact icons here -->
-        <div class="w3-row">
-          <div class="w3-container">
-            <a href="https://www.youtube.com/channel/UCCpm-Dh8OoVDQyEVrKXjEMA" class="btn-floating red" target="_blank">
-              <i class="fa fa-youtube w3-margin" style="font-size:32px;color:red"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/alex-murray-5056a155/" class="btn-floating yellow" target="_blank">
-              <i class="fa fa-linkedin-square w3-margin" style="font-size:32px; color:#66a3ff"></i>
-            </a>
-            <a href="https://github.com/namurray1" class="btn-floating green" target="_blank">
-              <i class="fa fa-github w3-margin" style="font-size:32px;color:black"></i>
-            </a>
-            <a href="https://www.twitter.com/MURRAY_ALEX" class="btn-floating blue" target="_blank">
-              <i class="fa fa-twitter w3-margin" style="font-size:32px;color:#80b3ff"></i>
-            </a>
-            <a href="https://www.medium.com/code-for-charlotte" class="btn-floating black" target="_blank">
-              <i class="fa fa-medium w3-margin" style="font-size:32px;color:#000102"></i>
-            </a>
-            <a href="mailto:namurray1@gmail.com" class="btn-floating teal" target="_blank">
-              <i class="fa fa-envelope fa-inverse w3-margin" style="font-size:32px;color:red"></i>
-            </a>
-          </div>
-        </div>
-        <!-- put a link to a PDF copy of your CV here -->
+    <!--Contact field -->
+    <div class="w3-col m6 w3-container">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Charlotte, NC
+        <br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Phone: 704-222-9205
+        <br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Email: namurray1@gmail.com
+        <br>
       </div>
-    </div> <!--this is where the container begins-->
+      <form class="w3-container" action="/action_page.php" target="blank">
+        <p>
+          <label>Full Name</label>
+          <input class="w3-input w3-disabled" type="text">
+        </p>
+        <p>
+          <label>Email</label>
+          <input class="w3-input w3-disabled" type="text">
+        </p>
+        <p>
+          <label>Message</label>
+          <input class="w3-input w3-disabled" type="text">
+        </p>
+        <button class="w3-button w3-hover-teal w3-disabled w3-black w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
     </div>
   </div>
-  </div>
-  </div>
+  <!--consider putting maps and contact area in here for responsiveness-->
+
+
+
+
+
+  <!-- <div class="w3-col m6 w3-container w3-padding"> -->
+
+
+
+  <!-- Add you social media contact icons here -->
+  <!-- <div class="w3-row">
+              <div class="w3-container">
+                <a href="https://www.youtube.com/channel/UCCpm-Dh8OoVDQyEVrKXjEMA" class="btn-floating red" target="_blank">
+                  <i class="fa fa-youtube w3-margin" style="font-size:32px;color:red"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/alex-murray-5056a155/" class="btn-floating yellow" target="_blank">
+                  <i class="fa fa-linkedin-square w3-margin" style="font-size:32px; color:#66a3ff"></i>
+                </a>
+                <a href="https://github.com/namurray1" class="btn-floating green" target="_blank">
+                  <i class="fa fa-github w3-margin" style="font-size:32px;color:black"></i>
+                </a>
+                <a href="https://www.twitter.com/MURRAY_ALEX" class="btn-floating blue" target="_blank">
+                  <i class="fa fa-twitter w3-margin" style="font-size:32px;color:#80b3ff"></i>
+                </a>
+                <a href="https://www.medium.com/code-for-charlotte" class="btn-floating black" target="_blank">
+                  <i class="fa fa-medium w3-margin" style="font-size:32px;color:#000102"></i>
+                </a>
+                <a href="mailto:namurray1@gmail.com" class="btn-floating teal" target="_blank">
+                  <i class="fa fa-envelope fa-inverse w3-margin" style="font-size:32px;color:red"></i>
+                </a>
+              </div>
+            </div>
+           
+          </div>
+        </div> -->
+  <!-- </div> End of the container for maps and contact area -->
+
+  <!-- </div>
+  </div> -->
 
 
 
@@ -229,7 +250,8 @@
 
 
   <!--The Footer goes here.Make sure to fix the flag so that it lines up under the name -->
-  <div class="row">
+
+  <!-- <div class="row">
     <div class="w3-row w3-container w3-grey w3-center w3-padding">
       <p>alexmurray.design
         <i class="fa fa-copyright" style="font-size:18px">2017</i>
@@ -250,7 +272,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 
