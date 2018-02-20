@@ -39,8 +39,14 @@ html {
 }
 
 
-.w3-wide{letter-spacing: 10px;}
-.w3-hover-opacity{cursor: pointer;}
+
+
+.w3-wide{
+  letter-spacing: 10px;
+}
+.w3-hover-opacity{
+  cursor: pointer;
+}
 
 /* Turn off parallax effect for mobile devices */
 
