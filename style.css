@@ -51,6 +51,20 @@ html {
   cursor: pointer;
 }
 
+/* flexbox container for projects */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  margin: 0 10px 0;
+}
+
+
+
 /* Turn off parallax effect for mobile devices */
 
 @media only screen and (max-device-width: 1024px) {
