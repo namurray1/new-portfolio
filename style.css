@@ -51,11 +51,16 @@ html {
   cursor: pointer;
 }
 
+/* need to add css to make the rows and colums line up */
+
 /* flexbox container for projects */
 
 .flex-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
