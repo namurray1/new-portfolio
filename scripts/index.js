@@ -34,31 +34,33 @@ $("#myNavbar a").on('click', function (event){
 
 // function for opening menu on small screens
 
-// function toggleFunction() {
-//   var x = document.getElementById("navDemo");
-//   if (x.className.indexOf("w3-show") === -1) {
-//     x.className += " w3-show";
-//   } else {
-//     x.className = x.className.replace(" w3-show", "");
-//   }
-// }
+function toggleFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") === -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
 
-// function myMap() {
-//   myCenter = new google.maps.LatLng(35.245531, -80.797539);
-//   var mapOptions = {
-//     center: myCenter,
-//     zoom: 12,
-//     scrollWheel: true,
-//     draggable: false,
-//     mapTypeId: google.maps.MapTypeId.ROADMAP
-//   };
-//   var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+// Google Maps
 
-//   var marker = new google.maps.Marker({
-//     position: myCenter,
-//   });
-//   marker.setMap(map);
-// }
+function myMap() {
+  myCenter = new google.maps.LatLng(35.245531, -80.797539);
+  var mapOptions = {
+    center: myCenter,
+    zoom: 12,
+    scrollWheel: true,
+    draggable: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
 
 
 // // scroll function for "Go to Top" button
