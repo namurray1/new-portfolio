@@ -18,28 +18,27 @@
 
 <body>
 
-  <!-- Need to add a go back to top button. Add medium and code for charlotte links to page -->
-
   <!--navbar and contents-->
   <div class="w3-top w3-card-2">
     <div class "w3-bar" id="myNavbar">
-      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-left" href="javascript:void(0);" onclick="toggleFunction()"
         title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
       <a href="#alex murray" class="w3-bar-item w3-button w3-hover-teal w3-hide-small">Alex Murray</a>
-      <a href="#about me" class="w3-bar-item w3-button w3-hover-teal w3-hide-small w3-right">
+      <a href="#about_me" class="w3-bar-item w3-button w3-hover-teal w3-hide-small w3-right">
         <i class="fa fa-user"></i> About Me</a>
       <a href="#projects" class="w3-bar-item w3-button w3-hover-teal w3-hide-small w3-right">
         <i class="fa fa-th"></i> Projects</a>
-      <a href="#contact me" class="w3-bar-item w3-button w3-hover-teal w3-hide-small w3-right">
+      <a href="#contact_me" class="w3-bar-item w3-button w3-hover-teal w3-hide-small w3-right">
         <i class="fa fa-envelope"></i> Contact Me</a>
     </div>
 
 
     <!-- navbar for small screens -->
     <div id="navDemo" class="w3-bar-block w3-card-hide w3-white w3-hide w3-hide-large w3-hide-medium">
-      <a href="#about" class="w3-bar-item w3-button w3-hover-teal" onclick="toggleFunction()">ABOUT</a>
+      <a href="#alex murray" class="w3-bar-item w3-button w3-hover-teal" onclick="toggleFunction()">ALEX MURRAY</a>
+      <a href="#about me" class="w3-bar-item w3-button w3-hover-teal" onclick="toggleFunction()">ABOUT</a>
       <a href="#projects" class="w3-bar-item w3-button w3-hover-teal" onclick="toggleFunction()">PROJECTS</a>
       <a href="#contact me" class="w3-bar-item w3-button w3-hover-teal" onclick="toggleFunction()">CONTACT ME</a>
       <!-- <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">SEARCH</a> -->
@@ -59,7 +58,7 @@
 
   <div class="w3-content w3-padding-48" style="max-width: 1564px">
     <div class="w3-row">
-      <div class="w3-content w3-container w3-padding-64" id="about me">
+      <div class="w3-content w3-container w3-padding-64" id="about_me">
         <h3 class="w3-center">About Me</h3>
         <p class="w3-center">
           <em>Web Developer</em>
@@ -119,7 +118,10 @@
 
   <!-- Projects -->
 
+  <!-- Come back to this section and fix the columns and rows -->
+
   <div class="w3-row-padding w3-margin-bottom flex-container">
+    <div class="row">
     <div class="column">
       <div class="w3-card">
         <img src='http://placeskull.com/300/300' style="width:100%" alt='Coming Soon Skull' />
@@ -129,7 +131,8 @@
         <img src='http://placeskull.com/300/300' style="width:100%" alt='Coming Soon Skull' />
       </div>
     </div>
-    
+  </div>
+<div class="row">
     <div class="column">
       <div class="w3-card">
         <img src='http://placeskull.com/300/300' style="width:100%" alt='Coming Soon Skull' />
@@ -141,6 +144,7 @@
 
     </div>
   </div>
+</div>
 
 
 
@@ -154,7 +158,7 @@
 
   <!-- Contact section -->
 
-  <div class="w3-row w3-padding-24" id="contact me">
+  <div class="w3-row w3-padding-24" id="contact_me">
     <h3 class="w3-center">How to reach me</h3>
     <p class="w3-center">
       <em>Social Media | Email | Blog | Resume</em>
