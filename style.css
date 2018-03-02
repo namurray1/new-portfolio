@@ -57,11 +57,12 @@ html {
 
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: flex-start;
   justify-content: center;
-  align-content: center;
-  align-items: center;
+  align-content: space-between;
+  /* align-items: ; */
   flex-wrap: wrap;
+  /* margin: 50px; */
 }
 
 .flex-container > div {
