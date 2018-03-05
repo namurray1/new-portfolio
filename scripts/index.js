@@ -29,8 +29,6 @@ function myFunction() {
   }
 }
 
-// You need to fix how the navbar changes color and opacity when the scroll begins here!!!
-
 
 // function for opening menu on small screens
 
@@ -62,17 +60,23 @@ function myMap() {
   marker.setMap(map);
 }
 
+// Go to top button appears when user scrolls past 20 pixels. Make this is floating button that stays on the right of the screen
 
+window.onscroll = function() {
+  scrollFunction();
+};
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.getElementById("myBtn").style.display = "block";
-//   } else {
-//     document.getElementById("myBtn").style.display = "none";
-//   }
-// }
+function scrollFunction() {
+  if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
 
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
+// Scrolls to the top of the page when user clicks the go to top button
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
