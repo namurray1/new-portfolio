@@ -151,3 +151,7 @@ html {
 #myBtn:hover {
   background-color: #555;
 }
+
+#cv {
+  text-decoration: none;
+}
