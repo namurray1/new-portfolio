@@ -112,12 +112,42 @@ html {
   transition: .5s ease;
   background-color: rgb(25, 131, 202);
 }
+.overlay3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  width: 400px;
+  opacity: 0; 
+  transition: .5s ease;
+  background-color: rgb(10, 54, 83);
+}
+.overlay4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(206, 253, 117);
+}
 
 .container:hover .overlay1{
   opacity: 1;
 }
 
 .container:hover .overlay2{
+  opacity: 1;
+}
+.container:hover .overlay3{
+  opacity: 1;
+}
+.container:hover .overlay4{
   opacity: 1;
 }
 
