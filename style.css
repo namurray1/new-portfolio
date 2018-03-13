@@ -158,6 +158,10 @@ img {
   text-align: center;
 } */
 
+#display {
+  color: white;
+}
+
 #myBtn {
   display: none;
   position: fixed;
