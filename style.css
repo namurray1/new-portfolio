@@ -55,20 +55,24 @@ html {
 
 .flex-container {
   display: flex;
-  height: auto;
+  flex-direction: column;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* height: auto; */
   justify-content: center;
-  flex-flow: row wrap;
+  flex-flow: column-wrap;
+  /* align-content: space-around; */
 }
 
 .flex-container>div {
   margin: 10px 20px 50px 0px;
-
 }
 
 img {
   width: 400px;
   height: 300px;
 }
+
 /* Turn off parallax effect for mobile devices */
 
 @media only screen and (max-device-width: 1024px) {
