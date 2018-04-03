@@ -60,7 +60,7 @@ html {
   /* flex-wrap: wrap; */
   /* height: auto; */
   justify-content: center;
-  flex-flow: column-wrap;
+  /* flex-flow: column-wrap; */
   /* align-content: space-around; */
 }
 
